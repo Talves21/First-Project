@@ -3,7 +3,7 @@ body{
 }
 
 nav{
-    position: fixed;
+    /* position: fixed; */
     background-color: rgb(11, 11, 49);
     height: 25px;
     width: 100%;
@@ -15,10 +15,9 @@ a{
 }
 
 .navlink1 {
-    position: absolute;
     font-size: x-small;
     font-weight: 150;
-    padding-left: 20px;
+    padding-left: 87px;
 
     :hover{
     text-decoration: underline;
@@ -26,38 +25,155 @@ a{
 }
 
 .navlink2 {
+    list-style: none;
     display: flex;
-    font-size: x-small;
-    font-weight: 150;
     justify-content: end;
     padding-right: 100px;
-    list-style: none;
-
+    margin-top: -25px;
+    font-size: x-small;
+    font-weight: 150;
+    
     :hover{
         text-decoration: underline;  
     }
 }
 
 .image1{
-    display: relative;
-    padding: 20px;
-    padding-top: 50px;
+    padding: 50px 0px 0px 75px;
+    width: 50%;
 }
 
-.navlink3 ul {
-    text-transform: uppercase;
+.navlink3{
     list-style: none;
-    margin-top: 35px;
-    gap: 1rem;
+    text-align: end;
+    padding-right: 100px;
+    margin-top: -35px;
+}
+
+.navlink3 li {
+    display: inline;
+    background-color: rgb(11, 11, 49);
+    padding: 10px 18px 10px 18px;
+    font-size: 15px;
+}
+
+.navlink3 a{
+    color: white;
 
     :hover{
         text-decoration: underline;
     }
 }
 
-.navlink3 li {
-    display: inline;
-    font-size: 15px;
+.image2 > img{
+    padding: 195px 72px 0px 72px;
+    width: 90%;
+}
+
+.bullets{
+    display: inline-block;
+    background-color: rgb(128, 128, 128);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px; 
+}
+
+.classBullets{
+    text-align: center;
+}
+
+.infoTop{
+    display: flex;
+    border-top: 2px solid rgb(128, 128, 128);
+    text-align: center;
+}
+
+h3{
+    font-size: xx-large ;
+}
+
+.smart{
+    color: rgb(14, 30, 49);
+}
+
+.strong{
+    color: rgb(14, 30, 49);
+    padding: 0px 10px 0px 10px;  
+    border-left: 2px solid rgb(128, 128, 128); 
+    border-right: 2px solid rgb(128, 128, 128);
+}
+
+.stable{
+    color: rgb(14, 30, 49);
+    padding: 10px;
+}
+
+p{
+    color: rgb(169, 169, 169);
+}
+
+
+.moreButton{
+    background-color: rgb(33, 51, 73);
+    color: white;
+    font-weight: 300;
+    padding: 10px;
+    width: 8%;
+}
+
+.infoBottom{
+    display: flex;
+    background-color: rgb(19, 30, 41);
+    color: white;
+    justify-content: center;
+}
+
+.services{
+    padding-left: 40px;
+    flex: 3;
+}
+
+.services ul{
+    list-style: "⚙️";
+}
+
+.services li{
+    color: rgb(169, 169, 169);
+}
+
+.opportunities{
+    padding-right: 300px;
+    flex: 2;
+}
+
+.opportunities ul{
+    list-style: "🗨️";
+}
+
+.opportunities p{
+    font-size: larger;
+}
+
+.news{
+    flex: 1;
+    padding-right: 120px; ;
+}
+
+strong{
+    color: white;
+}
+
+.date1{
+    list-style-image: url(../images/Date1.png);
+}
+
+.date2{
+    list-style-image: url(../images/Date2.png);
+    
+}
+
+.date3{
+    list-style-image: url(../images/Date3.png);
 }
 
 footer{
