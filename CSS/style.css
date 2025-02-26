@@ -1,11 +1,14 @@
+/* Background of entire page */
+
 body{
     background-color: rgb(242, 243, 254);
 }
 
+/* Coloring navigation links */
+
 nav{
-    /* position: fixed; */
     background-color: rgb(11, 11, 49);
-    height: 25px;
+    height: 37px;
     width: 100%;
 }
 
@@ -14,8 +17,11 @@ a{
     text-decoration: none;
 }
 
+/* Positioning navigation links */
+
 .navlink1 {
-    font-size: x-small;
+    display: flex;
+    font-size: 14px;
     font-weight: 150;
     padding-left: 87px;
 
@@ -30,7 +36,7 @@ a{
     justify-content: end;
     padding-right: 100px;
     margin-top: -25px;
-    font-size: x-small;
+    font-size: 14px;
     font-weight: 150;
     
     :hover{
@@ -48,6 +54,10 @@ a{
     text-align: end;
     padding-right: 100px;
     margin-top: -35px;
+
+    :hover{
+        text-decoration: underline;
+    }
 }
 
 .navlink3 li {
@@ -59,11 +69,9 @@ a{
 
 .navlink3 a{
     color: white;
-
-    :hover{
-        text-decoration: underline;
-    }
 }
+
+/* Positioning of main image */
 
 .image2 > img{
     padding: 195px 72px 0px 72px;
@@ -81,6 +89,8 @@ a{
 .classBullets{
     text-align: center;
 }
+
+/* Positioning and coloring of main content below main image */
 
 .infoTop{
     display: flex;
@@ -112,20 +122,27 @@ p{
     color: rgb(169, 169, 169);
 }
 
+/* Positioning and coloring of buttons below main content */
 
 .moreButton{
     background-color: rgb(33, 51, 73);
     color: white;
     font-weight: 300;
     padding: 10px;
-    width: 8%;
+    border-radius: 15%;
+    border-color: rgb(33, 51, 73);
+    width: 15%;
+    height: 13%;
 }
+
+/* Positioning and coloring of bottom half of main content */
 
 .infoBottom{
     display: flex;
     background-color: rgb(19, 30, 41);
     color: white;
     justify-content: center;
+    height: max-content;
 }
 
 .services{
@@ -155,7 +172,7 @@ p{
 }
 
 .news{
-    flex: 1;
+    flex: 3;
     padding-right: 120px; ;
 }
 
@@ -176,7 +193,50 @@ strong{
     list-style-image: url(../images/Date3.png);
 }
 
-footer{
+/* Positioning and coloring of buttons below the bottom half of main content */
+
+.moreButton2{
+    background-color: rgb(33, 51, 73);
     color: white;
+    font-size: 20px;
+    border-radius: 15%;
+    border-color: rgb(33, 51, 73);
+    margin-top: 287px;
+    width: 25%;
+    height: 8%;
+}
+
+.moreButton3{
+    background-color: rgb(33, 51, 73);
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+    border-color: rgb(33, 51, 73);
+    margin-top: 220px;
+    margin-bottom: 62px;
+    width: 37%;
+    height: 8%;
+}
+
+.moreButton4{
+    background-color: rgb(33, 51, 73);
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+    border-color: rgb(33, 51, 73);
+    margin-top: 200px;
+    width: 25%;
+    height: 8%;
+}
+
+/* Bottom of the page */
+
+footer{
+    display: flex;
     background-color: rgb(14, 30, 49);
+    padding-left: 45px;
+}
+
+footer > p{
+    color: white;
 }
